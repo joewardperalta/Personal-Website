@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Nav() {
   return (
     <ul
-      className="nav flex justify-center gap-10 p-5 fixed bottom-0 left-0 w-full border-t font-semibold text-xs 
+      className="nav flex justify-center gap-10 p-5 fixed bottom-0 left-0 w-full border-t font-medium text-xs 
       bg-white lg:relative lg:text-base lg:border-none lg:justify-end lg:p-0"
     >
       <li className="item w-full lg:w-fit">
