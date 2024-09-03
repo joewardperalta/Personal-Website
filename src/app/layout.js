@@ -5,9 +5,9 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 
 // Components
-import Navbar from "@/components/Navbar";
-import Nav from "@/components/Nav";
-import Navbrand from "@/components/Navbrand";
+import Navbar from "@/components/navigation/Navbar";
+import Nav from "@/components/navigation/Nav";
+import Navbrand from "@/components/navigation/Navbrand";
 
 // Config
 const poppins = Poppins({
