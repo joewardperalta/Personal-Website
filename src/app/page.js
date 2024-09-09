@@ -5,21 +5,25 @@ import Subtitle from "@/components/typography/Subtitle";
 import Image from "next/image";
 import Title from "@/components/typography/Title";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
-import ExperienceCard from "@/components/cards/experience-card";
+import ExperienceCard from "@/components/cards/ExperienceCard";
+import Heading from "@/components/typography/Heading";
+import Subheading from "@/components/typography/Subheading";
+import ServiceCardSecondary from "@/components/cards/ServiceCardSecondary";
+import ServiceCardPrimary from "@/components/cards/ServiceCardPrimary";
 
 export default function Home() {
   return (
     <main>
-      <Section className="hero-section pb-20">
+      <Section className="hero-section pt-26">
         <Container className="flex flex-col text-center gap-14 items-center lg:gap-16 xl:gap-36 lg:flex-row lg:text-start">
           <div className="w-full">
             <Title>
               I&apos;m <span className="text-primary">Joeward Peralta</span> a
               full stack web developer.
             </Title>
-            <Subtitle>
-              I develop and implement UI/UX design into a static or dynamic
-              website.
+            <Subtitle className="max-w-[600px]">
+              Working in the software development field for 1 year as a
+              freelancer, specialized in user interface development.
             </Subtitle>
             <div className="flex flex-col md:flex-row md:justify-center  lg:justify-start">
               <PrimaryButton>Get started</PrimaryButton>
@@ -45,8 +49,8 @@ export default function Home() {
             />
             <ExperienceCard
               className="absolute top-[35%] right-[0]"
-              duration="8"
-              type="Months"
+              duration="1"
+              type="Year"
               description="Experience"
             />
             <ExperienceCard
@@ -60,6 +64,39 @@ export default function Home() {
               duration="2"
               type="Client Project"
               description="Completed"
+            />
+          </div>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <div className="text-center max-w-[1000px] mx-auto mb-16">
+            <h2 className="uppercase font-bold text-primary mb-1">Services</h2>
+            <Heading>Expertise Service! Let&apos;s check it out</Heading>
+            <Subheading>
+              In today’s fast-paced digital world, having a powerful and
+              engaging online presence is crucial for success. I specialize in
+              creating scalable websites that captivates your audience and also
+              drive measurable results.
+            </Subheading>
+          </div>
+          <div className="flex gap-10">
+            <ServiceCardSecondary
+              src="/images/ux-design.png"
+              title="UI UX Design"
+              description="Create outstanding visuals that is tailored for your needs using tools like Figma."
+            />
+            <ServiceCardPrimary
+              className="bg-primary"
+              src="/images/web-content.png"
+              title="Front End Develop"
+              description="Develop the structure and design part of the website using HTML, CSS, and JavaScript."
+            />
+            <ServiceCardSecondary
+              src="/images/back-end.png"
+              title="Back End Develop"
+              description="Develop and integrate database into a website for the management and storage of data."
             />
           </div>
         </Container>
