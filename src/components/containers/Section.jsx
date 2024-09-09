@@ -1,3 +1,3 @@
-export default function Section({ children }) {
-  return <section className="py-12">{children}</section>;
+export default function Section({ children, className }) {
+  return <section className={"py-12 " + className}>{children}</section>;
 }
