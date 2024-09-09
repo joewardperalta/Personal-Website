@@ -21,7 +21,7 @@ export default function Home() {
               I&apos;m <span className="text-primary">Joeward Peralta</span> a
               full stack web developer.
             </Title>
-            <Subtitle className="max-w-[600px]">
+            <Subtitle>
               Working in the software development field for 1 year as a
               freelancer, specialized in user interface development.
             </Subtitle>
