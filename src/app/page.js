@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <Section className="hero-section pb-20">
-        <Container className="flex flex-col text-center gap-14 items-center md:gap-24 lg:flex-row lg:text-start">
+        <Container className="flex flex-col text-center gap-14 items-center lg:gap-16 xl:gap-36 lg:flex-row lg:text-start">
           <div className="w-full">
             <Title>
               I&apos;m <span className="text-primary">Joeward Peralta</span> a
