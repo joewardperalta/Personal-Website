@@ -71,7 +71,7 @@ export default function Home() {
 
       <Section>
         <Container>
-          <div className="text-center max-w-[1000px] mx-auto mb-16">
+          <div className="text-center mx-auto mb-16">
             <h2 className="uppercase font-bold text-primary mb-1">Services</h2>
             <Heading>Expertise Service! Let&apos;s check it out</Heading>
             <Subheading>
@@ -81,7 +81,7 @@ export default function Home() {
               drive measurable results.
             </Subheading>
           </div>
-          <div className="flex gap-10">
+          <div className="flex gap-10 flex-col lg:flex-row">
             <ServiceCardSecondary
               src="/images/ux-design.png"
               title="UI UX Design"
