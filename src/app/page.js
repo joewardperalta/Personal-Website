@@ -110,6 +110,94 @@ export default function Home() {
       </Section>
 
       <Section>
+        <Container className="flex gap-10">
+          <div className="w-full hidden lg:block">
+            <Image
+              className="w-full"
+              src="/"
+              width={2000}
+              height={2000}
+              alt="Joeward's picture"
+            />
+          </div>
+
+          <div className="mb-16 w-full">
+            <div className="mb-8">
+              <h2 className="uppercase font-bold text-primary mb-1">
+                About me
+              </h2>
+              <Heading>Aspiring Web Developer & Designer</Heading>
+              <Subheading className="mx-0">
+                Graduated from Seneca College Newnham Polytecnic as a Software
+                Developer in August 2024. I specialized in web development field
+                working as a full stack developer. Through out my career, I have
+                gained valuable knowledge and hands-on experience with various
+                tools and technologies in modern world like Figma, Next.js,
+                React.js, Tailwind CSS, and much more.
+              </Subheading>
+            </div>
+
+            <div className="space-y-5 mb-10">
+              <div className="p-5 bg-orange-200 flex gap-5 rounded-xl">
+                <div className="rounded-full border-2 border-orange-500 h-fit p-[0.4375rem] w-[2.5rem]">
+                  <Image
+                    className="w-full"
+                    src="/images/right-arrow-orange.png"
+                    width={64}
+                    height={64}
+                    alt="arrow right icon"
+                  />
+                </div>
+                <div>
+                  <h5 className="font-medium text-lg mb-3 text-slate-900">
+                    2 Complete Project
+                  </h5>
+                  <p className="text-slate-600">
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Id
+                    finibus elementum lobortis commodo vivamus suspendisse
+                    adipiscing id.
+                  </p>
+                </div>
+              </div>
+
+              <div className="p-5 bg-purple-200 flex gap-5 rounded-xl">
+                <div className="rounded-full border-2 border-purple-500 h-fit p-[0.4375rem] w-[2.5rem]">
+                  <Image
+                    className="w-full"
+                    src="/images/right-arrow-purple.png"
+                    width={64}
+                    height={64}
+                    alt="arrow right icon"
+                  />
+                </div>
+                <div>
+                  <h5 className="font-medium text-lg mb-3 text-slate-900">
+                    1 Year Experience As Freelancer
+                  </h5>
+                  <p className="text-slate-600">
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Id
+                    finibus elementum lobortis commodo vivamus suspendisse
+                    adipiscing id.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <PrimaryButton className="flex items-center gap-5 justify-center">
+              <span>Download CV</span>
+              <Image
+                className="w-5"
+                src="/images/next.png"
+                width={64}
+                height={64}
+                alt="arrow right"
+              />
+            </PrimaryButton>
+          </div>
+        </Container>
+      </Section>
+
+      <Section>
         <Container>
           <div className="text-center mx-auto mb-16">
             <h2 className="uppercase font-bold text-primary mb-1">Process</h2>
