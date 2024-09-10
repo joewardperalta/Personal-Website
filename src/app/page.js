@@ -11,6 +11,7 @@ import Subheading from "@/components/typography/Subheading";
 import ServiceCardSecondary from "@/components/cards/ServiceCardSecondary";
 import ServiceCardPrimary from "@/components/cards/ServiceCardPrimary";
 import ServiceCardTertiary from "@/components/cards/ServiceCardTertiary";
+import TestimonialCard from "@/components/cards/TestimonialCard";
 
 export default function Home() {
   return (
@@ -127,6 +128,34 @@ export default function Home() {
               src="/images/customer-support.png"
               title="Develop Website"
               description="Gather and collect information from the client about their business and the type of contents they need for their website."
+            />
+          </div>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <div className="text-center mx-auto mb-16">
+            <h2 className="uppercase font-bold text-primary mb-1">
+              Testimonials
+            </h2>
+            <Heading>What People Say&apos;s About Me</Heading>
+          </div>
+          <div className="flex gap-10 flex-col lg:flex-row">
+            <TestimonialCard
+              name="John David Fernan"
+              comment="Lorem ipsum odor amet, consectetuer adipiscing elit. Sed sed fusce lobortis curae vel duis. Duis orci feugiat mauris; feugiat aptent massa."
+              role="Head Pastor"
+            />
+            <TestimonialCard
+              name="Karen Adriano"
+              comment="Lorem ipsum odor amet, consectetuer adipiscing elit. Sed sed fusce lobortis curae vel duis. Duis orci feugiat mauris; feugiat aptent massa."
+              role="CEO"
+            />
+            <TestimonialCard
+              name="John Paul Tan"
+              comment="Lorem ipsum odor amet, consectetuer adipiscing elit. Sed sed fusce lobortis curae vel duis. Duis orci feugiat mauris; feugiat aptent massa."
+              role="CEO"
             />
           </div>
         </Container>
