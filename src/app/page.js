@@ -10,6 +10,7 @@ import Heading from "@/components/typography/Heading";
 import Subheading from "@/components/typography/Subheading";
 import ServiceCardSecondary from "@/components/cards/ServiceCardSecondary";
 import ServiceCardPrimary from "@/components/cards/ServiceCardPrimary";
+import ServiceCardTertiary from "@/components/cards/ServiceCardTertiary";
 
 export default function Home() {
   return (
@@ -97,6 +98,35 @@ export default function Home() {
               src="/images/back-end.png"
               title="Back End Develop"
               description="Develop and integrate database into a website for the management and storage of data."
+            />
+          </div>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <div className="text-center mx-auto mb-16">
+            <h2 className="uppercase font-bold text-primary mb-1">Process</h2>
+            <Heading>My Working Process</Heading>
+          </div>
+          <div className="flex gap-10 flex-col lg:flex-row">
+            <ServiceCardTertiary
+              className="bg-white"
+              src="/images/data-gathering.png"
+              title="Gather Requirements"
+              description="Gather and collect information from the client about their business and the type of contents they need for their website."
+            />
+            <ServiceCardTertiary
+              className="bg-white"
+              src="/images/sketch.png"
+              title="Design UI UX"
+              description="Gather and collect information from the client about their business and the type of contents they need for their website."
+            />
+            <ServiceCardTertiary
+              className="bg-white"
+              src="/images/customer-support.png"
+              title="Develop Website"
+              description="Gather and collect information from the client about their business and the type of contents they need for their website."
             />
           </div>
         </Container>
