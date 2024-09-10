@@ -1,3 +1,7 @@
+"use client";
+import { useState } from "react";
+import { portfolioProjects } from "@/constants";
+
 import Container from "@/components/containers/Container";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import Section from "@/components/containers/Section";
@@ -12,6 +16,7 @@ import ServiceCardSecondary from "@/components/cards/ServiceCardSecondary";
 import ServiceCardPrimary from "@/components/cards/ServiceCardPrimary";
 import ServiceCardTertiary from "@/components/cards/ServiceCardTertiary";
 import TestimonialCard from "@/components/cards/TestimonialCard";
+import ProductCard from "@/components/cards/ProductCard";
 
 export default function Home() {
   return (
@@ -157,6 +162,26 @@ export default function Home() {
               comment="Lorem ipsum odor amet, consectetuer adipiscing elit. Sed sed fusce lobortis curae vel duis. Duis orci feugiat mauris; feugiat aptent massa."
               role="CEO"
             />
+          </div>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <div className="text-center mx-auto mb-16">
+            <h2 className="uppercase font-bold text-primary mb-1">Portfolio</h2>
+            <Heading>Digital Product Showcases</Heading>
+          </div>
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
+            {portfolioProjects.map((project) => (
+              <ProductCard
+                key={project.id}
+                image={project.image}
+                title={project.title}
+                description={project.description}
+                link={project.link}
+              />
+            ))}
           </div>
         </Container>
       </Section>
