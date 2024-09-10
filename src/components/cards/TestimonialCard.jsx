@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function TestimonialCard({ name, role, comment }) {
   return (
-    <div className="px-5 py-6 rounded-lg shadow-md space-y-5 w-full">
+    <div className="px-5 py-6 rounded-xl shadow-md space-y-5 w-full">
       <div className="flex gap-2">
         <Image src="/images/star.png" width={16} height={16} alt="star" />
         <Image src="/images/star.png" width={16} height={16} alt="star" />
