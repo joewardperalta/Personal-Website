@@ -39,13 +39,13 @@ export default function RootLayout({ children }) {
         <footer>
           <Section className="bg-slate-200 py-10">
             <Container className="">
-              <div className="flex justify-between">
-                <h6 className="font-medium text-slate-500">
+              <div className="flex justify-between flex-col lg:flex-row">
+                <h6 className="font-medium text-slate-500 text-center mb-5 lg:text-start lg:mb-0">
                   &copy; Copyright 2024. All Rights Reserved.
                 </h6>
-                <ul className="flex gap-10 font-medium border-2 text-slate-500">
+                <ul className="hidden lg:flex lg:gap-10 lg:font-medium lg:border-2 lg:text-slate-500">
                   <li>
-                    <Link href="/">Home</Link>
+                    <Link href="#">Home</Link>
                   </li>
                   <li>
                     <Link href="#about">About</Link>
