@@ -81,7 +81,7 @@ export default function Home() {
           <div className="text-center mx-auto mb-16">
             <h2 className="uppercase font-bold text-primary mb-1">Services</h2>
             <Heading>Expertise Service! Let&apos;s check it out</Heading>
-            <Subheading>
+            <Subheading className="mx-auto">
               In today’s fast-paced digital world, having a powerful and
               engaging online presence is crucial for success. I specialize in
               creating scalable websites that captivates your audience and also
@@ -127,7 +127,7 @@ export default function Home() {
                 About me
               </h2>
               <Heading>Aspiring Web Developer & Designer</Heading>
-              <Subheading className="mx-0">
+              <Subheading>
                 Graduated from Seneca College Newnham Polytecnic as a Software
                 Developer in August 2024. I specialized in web development field
                 working as a full stack developer. Through out my career, I have
@@ -270,6 +270,22 @@ export default function Home() {
                 link={project.link}
               />
             ))}
+          </div>
+        </Container>
+      </Section>
+
+      <Section className="bg-primary relative">
+        <Container className="">
+          <div className="w-1/2">
+            <Heading className="text-white">
+              Got A Project! Let&apos;s Talk
+            </Heading>
+            <p className="text-slate-200 mb-10">
+              Are you looking for a professional web designer and developer?
+              I&apos;m here at your service. For more details about pricing and
+              features, contact me by clicking the button below.
+            </p>
+            <PrimaryButton>Contact Me</PrimaryButton>
           </div>
         </Container>
       </Section>
