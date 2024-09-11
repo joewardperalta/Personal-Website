@@ -40,10 +40,10 @@ export default function RootLayout({ children }) {
           <Section className="bg-slate-200 py-10">
             <Container className="">
               <div className="flex justify-between flex-col lg:flex-row">
-                <h6 className="font-medium text-slate-500 text-center mb-5 lg:text-start lg:mb-0">
+                <h6 className="font-medium text-slate-600 text-center mb-5 lg:text-start lg:mb-0">
                   &copy; Copyright 2024. All Rights Reserved.
                 </h6>
-                <ul className="hidden lg:flex lg:gap-10 lg:font-medium lg:border-2 lg:text-slate-500">
+                <ul className="hidden lg:flex lg:gap-10 lg:font-medium lg:border-2 lg:text-slate-600">
                   <li>
                     <Link href="#">Home</Link>
                   </li>
