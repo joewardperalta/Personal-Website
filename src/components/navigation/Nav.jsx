@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <ul
       className="nav flex justify-center gap-5 p-5 fixed bottom-0 left-0 w-full border-t font-medium text-[0.5rem] 
-      bg-white lg:relative lg:text-base lg:border-none lg:justify-end lg:p-0"
+      bg-white lg:relative lg:text-base lg:border-none lg:justify-end lg:p-0 lg:gap-10"
     >
       <li className="item w-full lg:w-fit">
         <Link className="link" href="#">
