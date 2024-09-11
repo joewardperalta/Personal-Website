@@ -76,7 +76,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section>
+      <Section id="services">
         <Container>
           <div className="text-center mx-auto mb-16">
             <h2 className="uppercase font-bold text-primary mb-1">Services</h2>
@@ -109,7 +109,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section>
+      <Section id="about">
         <Container className="flex gap-10">
           <div className="w-full hidden lg:block">
             <Image
@@ -254,7 +254,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section>
+      <Section id="portfolio">
         <Container>
           <div className="text-center mx-auto mb-16">
             <h2 className="uppercase font-bold text-primary mb-1">Portfolio</h2>
@@ -274,7 +274,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section className="bg-primary relative">
+      <Section className="bg-primary relative" id="contact">
         <Container className="">
           <div className="w-1/2">
             <Heading className="text-white">

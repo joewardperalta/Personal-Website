@@ -8,6 +8,9 @@ import "./globals.css";
 import Navbar from "@/components/navigation/Navbar";
 import Nav from "@/components/navigation/Nav";
 import Navbrand from "@/components/navigation/Navbrand";
+import Container from "@/components/containers/Container";
+import Section from "@/components/containers/Section";
+import Link from "next/link";
 
 // Config
 const poppins = Poppins({
@@ -32,6 +35,35 @@ export default function RootLayout({ children }) {
         </header>
 
         {children}
+
+        <footer>
+          <Section className="bg-slate-200 py-10">
+            <Container className="">
+              <div className="flex justify-between">
+                <h6 className="font-medium text-slate-500">
+                  &copy; Copyright 2024. All Rights Reserved.
+                </h6>
+                <ul className="flex gap-10 font-medium border-2 text-slate-500">
+                  <li>
+                    <Link href="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link href="#about">About</Link>
+                  </li>
+                  <li>
+                    <Link href="#services">Services</Link>
+                  </li>
+                  <li>
+                    <Link href="#portfolio">Portfolio</Link>
+                  </li>
+                  <li>
+                    <Link href="#contact">Contact</Link>
+                  </li>
+                </ul>
+              </div>
+            </Container>
+          </Section>
+        </footer>
       </body>
     </html>
   );
