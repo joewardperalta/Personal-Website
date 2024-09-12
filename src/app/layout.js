@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
         {children}
 
         <footer>
-          <Section className="bg-slate-200 py-10">
+          <Section className="bg-slate-200 py-8">
             <Container className="">
               <div className="flex justify-between flex-col lg:flex-row">
                 <h6 className="font-medium text-slate-600 text-center mb-5 lg:text-start lg:mb-0">
