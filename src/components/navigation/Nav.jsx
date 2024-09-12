@@ -67,7 +67,7 @@ export default function Nav() {
           height={18}
           alt="Phone icon"
         ></Image>
-        <Link className="link" href="/contacts">
+        <Link className="link" href="#contacts">
           <span className="inline-block w-full text-center">Contact</span>
         </Link>
       </li>
