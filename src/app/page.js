@@ -8,7 +8,6 @@ import Section from "@/components/containers/Section";
 import Subtitle from "@/components/typography/Subtitle";
 import Image from "next/image";
 import Title from "@/components/typography/Title";
-import SecondaryButton from "@/components/buttons/SecondaryButton";
 import ExperienceCard from "@/components/cards/ExperienceCard";
 import Heading from "@/components/typography/Heading";
 import Subheading from "@/components/typography/Subheading";
@@ -18,8 +17,16 @@ import ServiceCardTertiary from "@/components/cards/ServiceCardTertiary";
 import TestimonialCard from "@/components/cards/TestimonialCard";
 import ProductCard from "@/components/cards/ProductCard";
 import Link from "next/link";
+import ContactForm from "@/components/forms/ContactForm";
 
 export default function Home() {
+  function handleHireMePopUp() {
+    const contactFormContainer = document.getElementById(
+      "contact-form-container"
+    );
+    contactFormContainer.classList.toggle("hidden");
+  }
+
   return (
     <main>
       <Section className="hero-section pt-26">
@@ -29,12 +36,14 @@ export default function Home() {
               I&apos;m <span className="text-primary">Joeward Peralta</span> a
               full stack web developer.
             </Title>
+
             <Subtitle>
               Working in the software development field for 1 year as a
               freelancer, specialized in user interface development.
             </Subtitle>
-            <div className="flex flex-col items-center space-y-8 lg:space-x-10 md:flex-row md:justify-center lg:justify-start">
-              <PrimaryButton>Get started</PrimaryButton>
+
+            <div className="flex flex-col items-center space-y-8 md:space-x-10 md:flex-row md:justify-center md:space-y-0 lg:justify-start ">
+              <PrimaryButton onClick={handleHireMePopUp}>Hire Me</PrimaryButton>
               <div className="flex gap-4">
                 <Link
                   href="https://www.linkedin.com/in/joewardperalta/"
@@ -90,6 +99,43 @@ export default function Home() {
               description="Completed"
             />
           </div>
+
+          <div
+            className="w-full h-full bg-slate-900 fixed left-0 top-0 py-20 hidden"
+            id="contact-form-container"
+          >
+            <Container className="h-full flex justify-center items-center lg:gap-20">
+              <div className="w-full">
+                <Heading className="text-white">Hire Me.</Heading>
+                <Subheading>
+                  I am available for freelance, long term, or contract work.
+                  Connect with me via phone:
+                  <span className="font-medium"> 647 901 3040</span> or email{" "}
+                  <span className="font-medium">
+                    joeward_peralta@outlook.com
+                  </span>
+                </Subheading>
+                <ContactForm />
+              </div>
+              <Image
+                className="h-[700px] w-full hidden lg:block"
+                src=""
+                width={2000}
+                height={2000}
+                alt="Joeward's image wearing formal clothe"
+              />
+            </Container>
+
+            <button onClick={handleHireMePopUp}>
+              <Image
+                className="w-5 absolute top-5 right-5 md:w-7 xl:top-10 xl:right-10"
+                src="/images/close.png"
+                width={64}
+                height={64}
+                alt="close icon"
+              />
+            </button>
+          </div>
         </Container>
       </Section>
 
@@ -139,20 +185,16 @@ export default function Home() {
           </div>
 
           <div className="mb-16 w-full">
-            <div className="mb-8">
-              <h2 className="uppercase font-bold text-primary mb-1">
-                About me
-              </h2>
-              <Heading>Aspiring Web Developer & Designer</Heading>
-              <Subheading>
-                Graduated from Seneca College Newnham Polytecnic as a Software
-                Developer in August 2024. I specialized in web development field
-                working as a full stack developer. Through out my career, I have
-                gained valuable knowledge and hands-on experience with various
-                tools and technologies in modern world like Figma, Next.js,
-                React.js, Tailwind CSS, and much more.
-              </Subheading>
-            </div>
+            <h2 className="uppercase font-bold text-primary mb-1">About me</h2>
+            <Heading>Aspiring Web Developer & Designer</Heading>
+            <Subheading>
+              Graduated from Seneca College Newnham Polytecnic as a Software
+              Developer in August 2024. I specialized in web development field
+              working as a full stack developer. Through out my career, I have
+              gained valuable knowledge and hands-on experience with various
+              tools and technologies in modern world like Figma, Next.js,
+              React.js, Tailwind CSS, and much more.
+            </Subheading>
 
             <div className="space-y-5 mb-10">
               <div className="p-5 bg-orange-200 flex gap-5 rounded-xl">
