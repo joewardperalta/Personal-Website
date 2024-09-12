@@ -17,6 +17,7 @@ import ServiceCardPrimary from "@/components/cards/ServiceCardPrimary";
 import ServiceCardTertiary from "@/components/cards/ServiceCardTertiary";
 import TestimonialCard from "@/components/cards/TestimonialCard";
 import ProductCard from "@/components/cards/ProductCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -32,18 +33,34 @@ export default function Home() {
               Working in the software development field for 1 year as a
               freelancer, specialized in user interface development.
             </Subtitle>
-            <div className="flex flex-col md:flex-row md:justify-center  lg:justify-start">
+            <div className="flex flex-col items-center space-x-10 md:flex-row md:justify-center  lg:justify-start">
               <PrimaryButton>Get started</PrimaryButton>
-              <SecondaryButton>
-                <Image
-                  className="w-5"
-                  src="/images/play.png"
-                  width={64}
-                  height={64}
-                  alt="play button"
-                />
-                <span>Watch Intro</span>
-              </SecondaryButton>
+              <div className="flex gap-4">
+                <Link
+                  href="https://www.linkedin.com/in/joewardperalta/"
+                  target="_blank"
+                >
+                  <Image
+                    className="w-6"
+                    src="/images/linkedin-logo.png"
+                    width={64}
+                    height={64}
+                    alt="LinkedIn"
+                  />
+                </Link>
+                <Link
+                  href="https://github.com/joewardperalta?tab=repositories"
+                  target="_blank"
+                >
+                  <Image
+                    className="w-6"
+                    src="/images/github.png"
+                    width={64}
+                    height={64}
+                    alt="GitHub"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
           <div className="hidden relative md:block max-w-[500px]">
