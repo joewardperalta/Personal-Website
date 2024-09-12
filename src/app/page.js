@@ -33,7 +33,7 @@ export default function Home() {
               Working in the software development field for 1 year as a
               freelancer, specialized in user interface development.
             </Subtitle>
-            <div className="flex flex-col items-center space-x-10 md:flex-row md:justify-center  lg:justify-start">
+            <div className="flex flex-col items-center space-y-8 lg:space-x-10 md:flex-row md:justify-center lg:justify-start">
               <PrimaryButton>Get started</PrimaryButton>
               <div className="flex gap-4">
                 <Link
