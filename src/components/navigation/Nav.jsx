@@ -47,27 +47,29 @@ export default function Nav() {
       </li>
 
       <li className="item w-full lg:w-fit">
-        <Image
-          className="mx-auto mb-2 lg:hidden"
-          src="/vectors/folder.svg"
-          width={18}
-          height={18}
-          alt="Folder icon"
-        ></Image>
         <Link className="link" href="#portfolio">
+          <Image
+            className="mx-auto mb-2 lg:hidden"
+            src="/vectors/folder.svg"
+            width={18}
+            height={18}
+            alt="Folder icon"
+          ></Image>
+
           <span className="inline-block w-full text-center">Portfolio</span>
         </Link>
       </li>
 
       <li className="item w-full lg:w-fit">
-        <Image
-          className="mx-auto mb-2 lg:hidden"
-          src="/vectors/phone.svg"
-          width={18}
-          height={18}
-          alt="Phone icon"
-        ></Image>
-        <Link className="link" href="#contacts">
+        <Link className="link" href="#contact">
+          <Image
+            className="mx-auto mb-2 lg:hidden"
+            src="/vectors/phone.svg"
+            width={18}
+            height={18}
+            alt="Phone icon"
+          ></Image>
+
           <span className="inline-block w-full text-center">Contact</span>
         </Link>
       </li>
