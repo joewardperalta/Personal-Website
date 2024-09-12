@@ -5,3 +5,8 @@
 body {
   line-height: 1.8;
 }
+
+input:-webkit-autofill {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+}
