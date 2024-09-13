@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { portfolioProjects } from "@/constants";
+import { portfolioProjects, testimonials } from "@/constants";
 
 import Container from "@/components/containers/Container";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
@@ -294,18 +294,15 @@ export default function Home() {
             <Heading>What People Say&apos;s About Me</Heading>
           </div>
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
-            <TestimonialCard
-              name="John David Fernan"
-              comment="My Church needed a website and we requested Mr. Joeward Peralta to build, design and maintain our website. It was easy and straightforward as to what we needed and desired our constituents and those interested in attending our church locally, internationally and online. An online presence is important and your website represents your business professionalism. We recommend Mr. Peralta and look forward to working with him for all our website design needs."
-              role="Head Pastor"
-              image="/images/David Fernan.jpg"
-            />
-            <TestimonialCard
-              name="Karen Adriano"
-              comment="Lorem ipsum odor amet, consectetuer adipiscing elit. Sed sed fusce lobortis curae vel duis. Duis orci feugiat mauris; feugiat aptent massa. Lorem ipsum odor amet, consectetuer adipiscing elit. Sed sed fusce lobortis curae vel duis. Duis orci feugiat mauris; feugiat aptent massa."
-              role="CEO"
-              image="/images/woman.png"
-            />
+            {testimonials.map((testimony) => (
+              <TestimonialCard
+                key={testimony.id}
+                name={testimony.author}
+                comment={testimony.comment}
+                role={testimony.role}
+                image={testimony.image}
+              />
+            ))}
           </div>
         </Container>
       </Section>
