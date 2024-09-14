@@ -13,6 +13,7 @@ export default function ContactForm() {
 
     const contactForm = document.getElementById("contact-form");
     contactForm.reset(); // reset input fields
+    console.log("Reset");
 
     try {
       const response = await fetch("/api/contact", {
