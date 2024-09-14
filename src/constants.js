@@ -37,7 +37,7 @@ export const testimonials = [
     id: 2,
     author: "Rommel",
     role: "Business Owner",
-    image: "/images/man.png",
+    image: "/images/user.png",
     comment:
       "Joe assisted me with the creation of my business' website. I am pleased to say I was satisfied with the outstanding results he gave me. Overall, I highly recommend his services and I will certainly be doing more business with him in the future.",
   },

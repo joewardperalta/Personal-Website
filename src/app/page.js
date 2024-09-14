@@ -18,9 +18,17 @@ import TestimonialCard from "@/components/cards/TestimonialCard";
 import ProductCard from "@/components/cards/ProductCard";
 import Link from "next/link";
 import ContactForm from "@/components/forms/ContactForm";
+import ContactPopUp from "@/components/forms/ContactPopUp";
 
 export default function Home() {
   function handleHireMePopUp() {
+    const contactFormContainer = document.getElementById(
+      "hiring-form-container"
+    );
+    contactFormContainer.classList.toggle("hidden");
+  }
+
+  function handleContactMePopUp() {
     const contactFormContainer = document.getElementById(
       "contact-form-container"
     );
@@ -100,42 +108,13 @@ export default function Home() {
             />
           </div>
 
-          <div
-            className="w-full h-full bg-slate-900 fixed left-0 top-0 py-20 hidden"
-            id="contact-form-container"
-          >
-            <Container className="h-full flex justify-center items-center lg:gap-20">
-              <div className="w-full">
-                <Heading className="text-white">Hire Me.</Heading>
-                <Subheading>
-                  I am available for freelance, long term, or contract work.
-                  Connect with me via phone:
-                  <span className="font-medium"> 647 901 3040</span> or email{" "}
-                  <span className="font-medium">
-                    joeward_peralta@outlook.com
-                  </span>
-                </Subheading>
-                <ContactForm />
-              </div>
-              <Image
-                className="h-[700px] w-full hidden lg:block"
-                src=""
-                width={2000}
-                height={2000}
-                alt="Joeward's image wearing formal clothe"
-              />
-            </Container>
-
-            <button onClick={handleHireMePopUp}>
-              <Image
-                className="w-5 absolute top-5 right-5 md:w-7 xl:top-10 xl:right-10"
-                src="/images/close.png"
-                width={64}
-                height={64}
-                alt="close icon"
-              />
-            </button>
-          </div>
+          <ContactPopUp
+            heading="Hire Me."
+            subheading="I am available for freelance, long term, or contract work. Connect with me via phone: 647-901-3040 or email joeward_peralta@outlook.com"
+            image=""
+            id="hiring-form-container"
+            handlePopUp={handleHireMePopUp}
+          />
         </Container>
       </Section>
 
@@ -336,10 +315,21 @@ export default function Home() {
             <p className="text-slate-200 mb-10">
               Are you looking for a professional web designer and developer?
               I&apos;m here at your service. For more details about pricing and
-              features, contact me by clicking the button below.
+              features or any other inquiries, contact me by clicking the button
+              below.
             </p>
-            <PrimaryButton>Contact Me</PrimaryButton>
+            <PrimaryButton onClick={handleContactMePopUp}>
+              Contact Me
+            </PrimaryButton>
           </div>
+
+          <ContactPopUp
+            heading="Contact Me."
+            subheading="I am here to answer any questions you may have including project development, pricing, services, and more. If you have any other questions please feel free to contact me."
+            image=""
+            id="contact-form-container"
+            handlePopUp={handleContactMePopUp}
+          />
         </Container>
       </Section>
     </main>
