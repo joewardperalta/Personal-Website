@@ -306,7 +306,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section className="bg-primary relative mt-36" id="contact">
+      <Section className="bg-primary relative lg:mt-56" id="contact">
         <Container className="">
           <div className="lg:w-1/2">
             <Heading className="text-white">
