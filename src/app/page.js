@@ -85,9 +85,10 @@ export default function Home() {
             <Image
               className="w-full rounded-full -ml-5"
               src="/images/my-picture.png"
-              width={1600}
-              height={1600}
+              width={1000}
+              height={1000}
               alt="Joeward's picture"
+              priority
             />
             <ExperienceCard
               className="absolute top-[35%] right-[0]"
@@ -158,9 +159,10 @@ export default function Home() {
             <Image
               className="w-[30rem]"
               src="/images/Joeward beige semi formal.png"
-              width={2000}
-              height={2000}
+              width={1000}
+              height={1000}
               alt="Joeward's picture"
+              priority
             />
           </div>
 
@@ -330,6 +332,7 @@ export default function Home() {
             width={2000}
             height={2000}
             alt="Joeward pointing"
+            priority
           />
 
           <ContactPopUp
