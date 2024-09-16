@@ -155,15 +155,15 @@ export default function Home() {
         <Container className="flex gap-10 items-center">
           <div className="w-full hidden lg:block">
             <Image
-              className="w-[34rem]"
-              src="/images/joeward's photo formal purple.png"
+              className="w-[30rem]"
+              src="/images/Joeward beige semi formal.png"
               width={2000}
               height={2000}
               alt="Joeward's picture"
             />
           </div>
 
-          <div className="mb-16 w-full">
+          <div className="w-full">
             <h2 className="uppercase font-bold text-primary mb-1">About me</h2>
             <Heading>Aspiring Web Developer & Designer</Heading>
             <Subheading>
