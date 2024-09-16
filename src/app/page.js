@@ -210,11 +210,11 @@ export default function Home() {
                 </div>
                 <div>
                   <h5 className="font-medium text-lg mb-3 text-slate-900">
-                    1 Year Experience As Freelancer
+                    6 Months Experience As Freelancer
                   </h5>
                   <p className="text-slate-600">
-                    I have at least 1 year experience working as a freelancer. I
-                    have created various projects for my clients to aid their
+                    I have at least 6 months experience working as a freelancer.
+                    I have created various projects for my clients to aid their
                     business&apos; online profile.
                   </p>
                 </div>
