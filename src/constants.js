@@ -15,13 +15,6 @@ export const portfolioProjects = [
     image: "/images/Insideout Window Coverings Website.png",
     link: "https://www.insideoutwindowcoverings.ca/",
   },
-  {
-    id: 3,
-    title: "Bahay Kubo Child Centre",
-    description: "School Website",
-    image: "/images/arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg",
-    link: "/",
-  },
 ];
 
 export const testimonials = [

@@ -292,7 +292,7 @@ export default function Home() {
             <h2 className="uppercase font-bold text-primary mb-1">Portfolio</h2>
             <Heading>Digital Product Showcases</Heading>
           </div>
-          <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
+          <div className="flex flex-wrap gap-10 justify-center">
             {portfolioProjects.map((project) => (
               <ProductCard
                 key={project.id}
