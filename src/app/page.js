@@ -152,11 +152,11 @@ export default function Home() {
       </Section>
 
       <Section id="about">
-        <Container className="flex gap-10">
+        <Container className="flex gap-10 items-center">
           <div className="w-full hidden lg:block">
             <Image
-              className="w-full"
-              src="/"
+              className="w-[34rem]"
+              src="/images/joeward's photo formal purple.png"
               width={2000}
               height={2000}
               alt="Joeward's picture"
@@ -188,12 +188,12 @@ export default function Home() {
                 </div>
                 <div>
                   <h5 className="font-medium text-lg mb-3 text-slate-900">
-                    2 Complete Project
+                    4 Complete Project
                   </h5>
                   <p className="text-slate-600">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Id
-                    finibus elementum lobortis commodo vivamus suspendisse
-                    adipiscing id.
+                    I have completed at least 2 real world projects for my
+                    clients as a freelance web developer and 2 personal
+                    projects.
                   </p>
                 </div>
               </div>
@@ -213,9 +213,9 @@ export default function Home() {
                     1 Year Experience As Freelancer
                   </h5>
                   <p className="text-slate-600">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Id
-                    finibus elementum lobortis commodo vivamus suspendisse
-                    adipiscing id.
+                    I have at least 1 year experience working as a freelancer. I
+                    have created various projects for my clients to aid their
+                    business&apos; online profile.
                   </p>
                 </div>
               </div>
@@ -306,7 +306,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section className="bg-primary" id="contact">
+      <Section className="bg-primary relative mt-36" id="contact">
         <Container className="">
           <div className="lg:w-1/2">
             <Heading className="text-white">
@@ -322,6 +322,14 @@ export default function Home() {
               Contact Me
             </PrimaryButton>
           </div>
+
+          <Image
+            className="w-[35rem] absolute bottom-0 hidden lg:block lg:right-[24px] 2xl:right-[280px]"
+            src="/images/joeward pointing.png"
+            width={2000}
+            height={2000}
+            alt="Joeward pointing"
+          />
 
           <ContactPopUp
             heading="Contact Me."
