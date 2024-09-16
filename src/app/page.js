@@ -46,8 +46,9 @@ export default function Home() {
             </Title>
 
             <Subtitle>
-              Working in the software development field for 1 year as a
-              freelancer, specialized in user interface development.
+              Working in the software development field for 6 months as a
+              freelancer, specialized in user interface design and web
+              development.
             </Subtitle>
 
             <div className="flex flex-col items-center space-y-8 md:space-x-10 md:flex-row md:justify-center md:space-y-0 lg:justify-start ">
